@@ -1,4 +1,4 @@
-FROM registry.aliyuncs.com/acs-sample/jenkins-slave-dind:0.1
+FROM registry.cn-beijing.aliyuncs.com/qinyujia-test/jenkins-slave-dind:latest
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
 		bzip2 \
