@@ -24,8 +24,8 @@ iptables && \
 rm -rf /var/lib/apt/lists/*
 
 ENV DOCKER_BUCKET get.docker.com
-ENV DOCKER_VERSION 1.11.2
-ENV DOCKER_SHA256 8c2e0c35e3cda11706f54b2d46c2521a6e9026a7b13c7d4b8ae1f3a706fc55e1
+ENV DOCKER_VERSION 1.12.5
+ENV DOCKER_SHA256 0058867ac46a1eba283e2441b1bb5455df846144f9d9ba079e97655399d4a2c6
 
 RUN curl -fSL "https://${DOCKER_BUCKET}/builds/Linux/x86_64/docker-${DOCKER_VERSION}.tgz" -o docker.tgz \
 	&& echo "${DOCKER_SHA256} *docker.tgz" | sha256sum -c - \
