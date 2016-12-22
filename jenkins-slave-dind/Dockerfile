@@ -1,4 +1,4 @@
-FROM evarga/jenkins-slave:latest
+FROM registry.cn-beijing.aliyuncs.com/qinyujia-test/jenkins-slave:latest
 
 MAINTAINER Ringtail <zhongwei.lzw@alibaba-inc.com>
 
