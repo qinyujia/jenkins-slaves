@@ -1,6 +1,7 @@
-FROM registry.aliyuncs.com/acs-sample/jenkins-slave-dind:0.1
+FROM registry.cn-beijing.aliyuncs.com/qinyujia-test/jenkins-slave-dind:latest
 
-MAINTAINER Ringtail <zhongwei.lzw@alibaba-inc.com>
+MAINTAINER QYJ <yujia.qyj@alibaba-inc.com>
+
 
 ENV PHPIZE_DEPS \
 		autoconf \

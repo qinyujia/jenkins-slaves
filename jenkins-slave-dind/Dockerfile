@@ -1,6 +1,6 @@
 FROM registry.cn-beijing.aliyuncs.com/qinyujia-test/jenkins-slave:latest
 
-MAINTAINER Ringtail <zhongwei.lzw@alibaba-inc.com>
+MAINTAINER QYJ <yujia.qyj@alibaba-inc.com>
 
 USER root
 

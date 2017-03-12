@@ -1,4 +1,4 @@
-FROM registry.aliyuncs.com/acs-sample/jenkins-slave-dind-java:0.1
+FROM registry.cn-beijing.aliyuncs.com/qinyujia-test/jenkins-slave-dind-java:latest
 
 ENV GRADLE_VERSION 2.6
 
