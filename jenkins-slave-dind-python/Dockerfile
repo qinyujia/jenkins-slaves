@@ -35,7 +35,7 @@ RUN set -ex \
 	&& make install \
 	&& ldconfig \
 	&& curl -fSL 'https://bootstrap.pypa.io/get-pip.py' | python3 \
-	&& pip install --no-cache-dir --upgrade pip==$PYTHON_PIP_VERSION \
+	&& pip3 install --no-cache-dir --upgrade pip==$PYTHON_PIP_VERSION \
 	&& find /usr/local -depth \
 		\( \
 		    \( -type d -a -name test -o -name tests \) \
@@ -46,6 +46,6 @@ RUN set -ex \
 
 # install "virtualenv", since the vast majority of users of this image will want it
 COPY pip.conf /root/.pip/pip.conf
-RUN pip install --no-cache-dir virtualenv
+RUN pip3 install --no-cache-dir virtualenv
 
 CMD ["/usr/sbin/sshd", "-D"]
