@@ -34,7 +34,7 @@ RUN set -ex \
 	&& make -j$(nproc) \
 	&& make install \
 	&& ldconfig \
-	&& curl -fSL 'https://bootstrap.pypa.io/get-pip.py' | python2 \
+	&& curl -fSL 'https://bootstrap.pypa.io/get-pip.py' | python3 \
 	&& pip install --no-cache-dir --upgrade pip==$PYTHON_PIP_VERSION \
 	&& find /usr/local -depth \
 		\( \
