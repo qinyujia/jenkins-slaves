@@ -13,10 +13,10 @@ ENV LANG C.UTF-8
 # gpg: key 18ADD4FF: public key "Benjamin Peterson <benjamin@python.org>" imported
 ENV GPG_KEY C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF
 
-ENV PYTHON_VERSION 2.7.11
+ENV PYTHON_VERSION 3.6.1
 
 # if this is called "PIP_VERSION", pip explodes with "ValueError: invalid truth value '<VERSION>'"
-ENV PYTHON_PIP_VERSION 8.1.2
+ENV PYTHON_PIP_VERSION 9.0.1
 
 RUN set -ex \
 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" -o python.tar.xz \
